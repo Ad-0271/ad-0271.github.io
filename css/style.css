@@ -55,7 +55,7 @@ p {
   box-shadow: 0px 2px 5px 1px #ddd;
 }
 .info > .nameContainer h1 {
-  color: #673ab7;
+  color: #185a9d; /* #673ab7 */
   margin: 0.5rem 0;
 }
 .info > .nameContainer p {
@@ -63,19 +63,31 @@ p {
   color: #707070;
   margin: 0.5rem 0;
 }
-.info > .contacts {
+footer {
+  margin-bottom: -16px;
+  background: linear-gradient(to right, #43cea2, #185a9d);
+  color: white;
+}
+/* footer > div:nth-child(1) {
+  color: #185a9d;
+} */
+footer > .contacts {
   justify-content: center;
   margin: 1rem 0;
 }
-.info > .contacts div {
+footer > .contacts div {
   margin: 0.5rem 2rem;
   font-size: 18px;
   display: flex;
   color: "#A8A8A8";
 }
-.info > .contacts div > span {
-  color: #673ab7;
+footer > .contacts div > span {
+  color: #185a9d;
   margin-right: 0.5rem;
+}
+footer a {
+  color: white;
+  text-decoration: none;
 }
 .info > .aboutText {
   width: 50%;
@@ -132,7 +144,7 @@ p {
   height: 300px;
   z-index: -1;
   transform: skewY(-5deg);
-  background: #673ab7;
+  background: #185a9d;
   background: linear-gradient(to right, #43cea2, #185a9d);
 }
 @media all and (max-width: 900px) {
@@ -206,6 +218,9 @@ p {
   flex-direction: column;
   justify-content: center;
 }
+.projects h1 {
+  color: #707070;
+}
 .projects > .cards {
   justify-content: space-evenly;
   margin: 1rem 0;
@@ -216,7 +231,13 @@ p {
   margin: 1rem 1rem;
   border-radius: 5px;
   transition: box-shadow 0.6s cubic-bezier(0.43, 0.195, 0.02, 1);
-  box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.03), -1px 1px 0 rgba(0, 0, 0, 0.03), 1px -1px 0 rgba(0, 0, 0, 0.03), -1px -1px 0 rgba(0, 0, 0, 0.03);
+  box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.03), -1px 1px 0 rgba(0, 0, 0, 0.03),
+    1px -1px 0 rgba(0, 0, 0, 0.03), -1px -1px 0 rgba(0, 0, 0, 0.03);
+}
+.projects > .cards > .card a {
+  color: #707070;
+  text-decoration: none;
+  margin: 0 10px;
 }
 @media all and (max-width: 900px) {
   .projects > .cards > .card {
@@ -229,7 +250,9 @@ p {
   }
 }
 .projects > .cards > .card:hover {
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05), 0 2px 3px rgba(0, 0, 0, 0.05), 0 4px 6px rgba(0, 0, 0, 0.05), 0 8px 12px rgba(0, 0, 0, 0.05), 0 12px 24px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05), 0 2px 3px rgba(0, 0, 0, 0.05),
+    0 4px 6px rgba(0, 0, 0, 0.05), 0 8px 12px rgba(0, 0, 0, 0.05),
+    0 12px 24px rgba(0, 0, 0, 0.05);
 }
 .projects > .cards > .card > .img-top > img {
   width: 100%;
